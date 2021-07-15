@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head"><p id="head-p"> T O D O </p>
+            <div class="top-image"><img id="sunset" src="images/icon-moon.svg" alt=""></div>
+        </div>
+        <div class="typearea">
+        <button class="addbutn"onchange="addnew()"></button>
+        <input onfocus="func(this)" type="text" class="addtask" onchange="addnew()" placeholder="create a new todo...." >
+    </div>
+    
+    <div class="foot">
+        <div class="list"></div>
+
+    <div class="footer">
+    
+   <p id="allcount"></p>
+   <div class="inner">
+   <p id="all" onclick="alltasks()" >All</p>
+   <p id="active" onclick="activetask()">Active</p>
+   <p id="completed"  onclick="completedtask()">Completed</p>
+</div>
+   
+   <p id="clearcompleted"  onclick="clearcompletedtask()">Clear Completed</p>
+
+</div>
+</div> 
+        <div class="smallerphone">
+            <p id="allId" onclick="alltasks()" >All</p>
+    <p id="activeId" onclick="activetask()">Active</p>
+   <p id="completedId"  onclick="completedtask()">Completed</p>
+        </div>
+   </div>
+    
+    
+   <script src="main.js" ></script>
+</body>
+</html>
